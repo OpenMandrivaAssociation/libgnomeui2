@@ -9,7 +9,7 @@
 
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
-Version: 2.18.1
+Version: 2.19.0
 Release: %mkrel 1
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 # (fc) 2.10.1-3mdk don't bind toolbar settings to GConf directly
