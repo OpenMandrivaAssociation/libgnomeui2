@@ -9,7 +9,7 @@
 
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
-Version: 2.19.0
+Version: 2.19.1
 Release: %mkrel 1
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 # (fc) 2.10.1-3mdk don't bind toolbar settings to GConf directly
@@ -102,7 +102,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{pkgname}-2.0.lang
 %defattr(-,root,root)
 %doc AUTHORS NEWS README 
-%{_libexecdir}/gnome_segv2
 %{_libdir}/libglade/2.0/*.so
 %{_libdir}/gtk-2.0/*/filesystems/libgnome-vfs.so
 %{_datadir}/pixmaps/*
