@@ -5,7 +5,8 @@
 %define req_libgnome_version	2.13.0
 %define req_libgnomecanvas_version	2.0.0
 
-%define lib_name		%mklibname gnomeui %{api_version} %{lib_major}
+%define libname		%mklibname gnomeui %{api_version} %{lib_major}
+%define libnamedev	%mklibname -d gnomeui %{api_version}
 
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
@@ -42,28 +43,29 @@ Requires: gnome-icon-theme
 %description
 Data files for the GNOME UI library such as translations.
 
-%package -n %{lib_name}
+%package -n %{libname}
 Summary:	GNOME libraries
 Group:		%{group}
 
 Requires:	%{name} >= %{version}
 
-%description -n %{lib_name}
+%description -n %{libname}
 GNOME library contains extra widgets to let your 
 GNOME applications really shine
 
-%package -n %{lib_name}-devel
+%package -n %{libnamedev}
 Summary:	Static libraries, include files for GNOME
 Group:		Development/GNOME and GTK+
 Provides:	%{name}-devel = %{version}-%{release}
 Provides:	gnomeui2-devel = %{version}-%{release}
-Requires:	%{lib_name} = %{version}
+Requires:	%{libname} = %{version}
 Requires:	%{name} = %{version}
 Requires: libbonoboui2-devel >= %{req_libbonoboui_version}
 Requires: libgnomecanvas2-devel >= %{req_libgnomecanvas_version}
 Requires: libjpeg-devel
+Obsoletes: %mklibname -d gnomeui %{api_version} 0
 
-%description -n %{lib_name}-devel
+%description -n %{libnamedev}
 Static library, headers files and documentation needed in order 
 to develop applications using the GNOME library.
 
@@ -94,9 +96,9 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/libglade/2.0/*.{la,a} \
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -n %{lib_name} -p /sbin/ldconfig
+%post -n %{libname} -p /sbin/ldconfig
   
-%postun -n %{lib_name} -p /sbin/ldconfig
+%postun -n %{libname} -p /sbin/ldconfig
 
 
 %files -f %{pkgname}-2.0.lang
@@ -106,11 +108,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/gtk-2.0/*/filesystems/libgnome-vfs.so
 %{_datadir}/pixmaps/*
 
-%files -n %{lib_name}
+%files -n %{libname}
 %defattr(-,root,root)
-%{_libdir}/*.so.*
+%{_libdir}/libgnomeui-2.so.0*
 
-%files -n %{lib_name}-devel
+%files -n %{libnamedev}
 %defattr(-,root,root)
 %doc ChangeLog
 %doc %{_datadir}/gtk-doc/html/*
