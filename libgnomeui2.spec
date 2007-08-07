@@ -11,16 +11,10 @@
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
 Version: 2.19.1
-Release: %mkrel 2
+Release: %mkrel 3
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 # (fc) 2.10.1-3mdk don't bind toolbar settings to GConf directly
 Patch0: libgnomeui-2.14.1-xsettings.patch
-# (fc) 2.10.1-6mdk check if .desktop points to existing directory
-Patch3: libgnomeui-2.16.0-exists.patch
-# (fc) 2.10.1-7mdk fix .desktop icon load
-Patch4: libgnomeui-2.16.0-filechoosericon.patch
-# (fc) 2.10.1-9mdk fix .desktop dir handling
-Patch5: libgnomeui-fixdesktopdir.patch
 
 License: LGPL
 Url: http://www.gnome.org/
@@ -72,9 +66,6 @@ to develop applications using the GNOME library.
 %prep
 %setup -q -n %{pkgname}-%{version}
 %patch0 -p1 -b .xsettings
-%patch3 -p1 -b .exists
-%patch4 -p1 -b .filechoosericon
-%patch5 -p1 -b .fixdesktopdir
 
 %build
 
