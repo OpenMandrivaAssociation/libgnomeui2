@@ -11,10 +11,12 @@
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
 Version: 2.20.0
-Release: %mkrel 1
+Release: %mkrel 2
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 # (fc) 2.10.1-3mdk don't bind toolbar settings to GConf directly
 Patch0: libgnomeui-2.14.1-xsettings.patch
+# (fc) 2.20.0-2mdv improve volume/drive list consistency compared to Nautilus (SVN)
+Patch1: libgnomeui-2.20.0-volumelist.patch
 
 License: LGPL
 Url: http://www.gnome.org/
@@ -66,6 +68,7 @@ to develop applications using the GNOME library.
 %prep
 %setup -q -n %{pkgname}-%{version}
 %patch0 -p1 -b .xsettings
+%patch1 -p1 -b .volumelist
 
 %build
 
