@@ -18,7 +18,6 @@ Patch0: libgnomeui-2.14.1-xsettings.patch
 License: LGPL
 Url: http://www.gnome.org/
 Group: System/Libraries
-BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: libbonoboui2-devel >= %{req_libbonoboui_version}
 BuildRequires: libgnome2-devel >= %{req_libgnome_version}
 BuildRequires: libgnomecanvas2-devel >= %{req_libgnomecanvas_version}
