@@ -10,11 +10,9 @@
 
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
-Version: 2.20.1.1
+Version: 2.21.5
 Release: %mkrel 1
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
-# (fc) 2.10.1-3mdk don't bind toolbar settings to GConf directly (GNOME bug #497380)
-Patch0: libgnomeui-2.14.1-xsettings.patch
 License: LGPL
 Url: http://www.gnome.org/
 Group: System/Libraries
@@ -64,7 +62,6 @@ to develop applications using the GNOME library.
 
 %prep
 %setup -q -n %{pkgname}-%{version}
-%patch0 -p1 -b .xsettings
 
 %build
 
@@ -81,7 +78,7 @@ rm -rf $RPM_BUILD_ROOT
 
 #remove unpackaged files
 rm -f $RPM_BUILD_ROOT%{_libdir}/libglade/2.0/*.{la,a} \
- $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/*/filesystems/libgnome-vfs.*a
+ $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/*/filesystems/lib*a
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -96,6 +93,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS NEWS README 
 %{_libdir}/libglade/2.0/*.so
 %{_libdir}/gtk-2.0/*/filesystems/libgnome-vfs.so
+%{_libdir}/gtk-2.0/*/filesystems/libgio.so
 %{_datadir}/pixmaps/*
 
 %files -n %{libname}
