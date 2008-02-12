@@ -10,7 +10,7 @@
 
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
-Version: 2.21.90
+Version: 2.21.91
 Release: %mkrel 1
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 License: LGPL
@@ -21,6 +21,7 @@ BuildRequires: libbonoboui2-devel >= %{req_libbonoboui_version}
 BuildRequires: libgnome2-devel >= %{req_libgnome_version}
 BuildRequires: libgnomecanvas2-devel >= %{req_libgnomecanvas_version}
 BuildRequires: libglade2.0-devel
+BuildRequires: glib2-devel >= 2.15.5
 BuildRequires: pango-devel >= 1.1.2
 BuildRequires: gtk-doc >= 0.9
 BuildRequires: libjpeg-devel
