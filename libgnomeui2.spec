@@ -10,7 +10,7 @@
 
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
-Version: 2.21.91
+Version: 2.21.92
 Release: %mkrel 1
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 License: LGPL
