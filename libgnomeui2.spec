@@ -11,8 +11,10 @@
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
 Version: 2.22.01
-Release: %mkrel 1
+Release: %mkrel 2
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
+# (fc) 2.22.01-2mdv fix thumbnail over gio (GNOME bug #517276)
+Patch0: gio-thumbnail.patch
 License: LGPL
 Url: http://www.gnome.org/
 Group: System/Libraries
@@ -29,6 +31,8 @@ BuildRequires: gnome-keyring-devel
 BuildRequires: gnome-vfs2-devel >= 2.7.1
 BuildRequires: gtk+2-devel >= 2.9.0
 BuildRequires: libsm-devel
+BuildRequires: intltool
+BuildRequires: gnome-common
 Requires: libbonoboui2 >= %{req_libbonoboui_version}
 Requires: gnome-icon-theme
 
@@ -63,6 +67,10 @@ to develop applications using the GNOME library.
 
 %prep
 %setup -q -n %{pkgname}-%{version}
+%patch0 -p1 -b .gio-thumbnail
+
+#needed by patch0
+autoreconf
 
 %build
 
