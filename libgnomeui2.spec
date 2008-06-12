@@ -11,8 +11,12 @@
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
 Version: 2.22.1
-Release: %mkrel 1
+Release: %mkrel 2
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
+# (fc) 2.22.1-2mdv link with math library
+Patch0: libgnomeui-2.22.1-floor.patch
+# (fc) 2.22.1-2mdv various svn bugfixes
+Patch1: libgnomeui-2.22.1-svnfixes.patch
 License: LGPL
 Url: http://www.gnome.org/
 Group: System/Libraries
@@ -65,6 +69,11 @@ to develop applications using the GNOME library.
 
 %prep
 %setup -q -n %{pkgname}-%{version}
+%patch0 -p1 -b .floor
+%patch1 -p1 -b .svnfixes
+
+#needed by patch0
+autoreconf
 
 %build
 
