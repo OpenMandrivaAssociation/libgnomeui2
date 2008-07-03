@@ -10,14 +10,12 @@
 
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
-Version: 2.22.1
-Release: %mkrel 2
+Version: 2.23.4
+Release: %mkrel 1
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 # (fc) 2.22.1-2mdv link with math library
 Patch0: libgnomeui-2.22.1-floor.patch
-# (fc) 2.22.1-2mdv various svn bugfixes
-Patch1: libgnomeui-2.22.1-svnfixes.patch
-License: LGPL
+License: LGPLv2+
 Url: http://www.gnome.org/
 Group: System/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
@@ -30,7 +28,6 @@ BuildRequires: pango-devel >= 1.1.2
 BuildRequires: gtk-doc >= 0.9
 BuildRequires: libjpeg-devel
 BuildRequires: gnome-keyring-devel
-BuildRequires: gnome-vfs2-devel >= 2.7.1
 BuildRequires: gtk+2-devel >= 2.9.0
 BuildRequires: libsm-devel
 BuildRequires: intltool
@@ -70,13 +67,11 @@ to develop applications using the GNOME library.
 %prep
 %setup -q -n %{pkgname}-%{version}
 %patch0 -p1 -b .floor
-%patch1 -p1 -b .svnfixes
 
 #needed by patch0
 autoreconf
 
 %build
-
 %configure2_5x --enable-gtk-doc
 
 %make
@@ -108,8 +103,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc AUTHORS NEWS README 
 %{_libdir}/libglade/2.0/*.so
-%{_libdir}/gtk-2.0/*/filesystems/libgnome-vfs.so
-%{_libdir}/gtk-2.0/*/filesystems/libgio.so
 %{_datadir}/pixmaps/*
 
 %files -n %{libname}
