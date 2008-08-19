@@ -10,16 +10,11 @@
 
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
-Version: 2.23.4
-Release: %mkrel 2
+Version: 2.23.90
+Release: %mkrel 1
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 # (fc) 2.22.1-2mdv link with math library
 Patch0: libgnomeui-2.22.1-floor.patch
-# From upstream SVN (rev 5630): Use GType and the G_TYPE_* macros
-# instead of the deprecated GtkType and GTK_* macros. Allows building
-# libgnomeui using programmes with GTK_DISABLE_DEPRECATED again.
-# - AdamW 2008/07
-Patch1:	libgnomeui-2.23.4-gtype.patch
 License: LGPLv2+
 Url: http://www.gnome.org/
 Group: System/Libraries
@@ -72,7 +67,6 @@ to develop applications using the GNOME library.
 %prep
 %setup -q -n %{pkgname}-%{version}
 %patch0 -p1 -b .floor
-%patch1 -p0 -b .gtype
 
 #needed by patch0
 autoreconf
