@@ -11,7 +11,7 @@
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
 Version: 2.24.2
-Release: %mkrel 1
+Release: %mkrel 2
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 # (fc) 2.22.1-2mdv link with math library
 Patch0: libgnomeui-2.22.1-floor.patch
@@ -69,7 +69,7 @@ to develop applications using the GNOME library.
 %patch0 -p1 -b .floor
 
 #needed by patch0
-autoreconf
+autoreconf -fi
 
 %build
 %configure2_5x --enable-gtk-doc
