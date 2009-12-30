@@ -11,7 +11,7 @@
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
 Version: 2.24.2
-Release: %mkrel 2
+Release: %mkrel 3
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 # (fc) 2.22.1-2mdv link with math library
 Patch0: libgnomeui-2.22.1-floor.patch
@@ -27,7 +27,7 @@ BuildRequires: glib2-devel >= 2.15.5
 BuildRequires: pango-devel >= 1.1.2
 BuildRequires: gtk-doc >= 0.9
 BuildRequires: libjpeg-devel
-BuildRequires: gnome-keyring-devel
+BuildRequires: libgnome-keyring-devel
 BuildRequires: gtk+2-devel >= 2.9.0
 BuildRequires: libsm-devel
 BuildRequires: intltool
