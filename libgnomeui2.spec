@@ -10,8 +10,8 @@
 
 Summary: Main GNOME libraries
 Name: %{pkgname}%{api_version}
-Version: 2.24.2
-Release: %mkrel 4
+Version: 2.24.3
+Release: %mkrel 1
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 # (fc) 2.22.1-2mdv link with math library
 Patch0: libgnomeui-2.22.1-floor.patch
