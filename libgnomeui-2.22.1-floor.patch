@@ -1,0 +1,13 @@
+diff -p -up libgnomeui-2.22.1/libgnomeui/Makefile.am.floor libgnomeui-2.22.1/libgnomeui/Makefile.am
+--- libgnomeui-2.22.1/libgnomeui/Makefile.am.floor	2008-06-12 11:14:05.000000000 +0200
++++ libgnomeui-2.22.1/libgnomeui/Makefile.am	2008-06-12 11:14:54.000000000 +0200
+@@ -249,7 +249,8 @@ libgnomeui_2_la_LDFLAGS = \
+ libgnomeui_2_la_LIBADD = \
+ 	$(LIBGNOMEUI_LIBS)			\
+ 	$(SM_LIBS)				\
+-	$(X11_LIBS)
++	$(X11_LIBS)				\
++	-lm
+ 
+ LDADD = \
+ 	libgnomeui-2.la $(LIBGNOMEUI_LIBS)
