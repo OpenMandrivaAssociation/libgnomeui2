@@ -65,8 +65,8 @@ to develop applications using the GNOME library.
 autoreconf -fi
 
 %build
-%configure2_5x \
-	--disable-static \
+export CC=gcc
+%configure \
 	--enable-gtk-doc
 
 %make
