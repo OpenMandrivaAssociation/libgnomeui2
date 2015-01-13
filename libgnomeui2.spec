@@ -67,7 +67,8 @@ autoreconf -fi
 %build
 export CC=gcc
 %configure \
-	--enable-gtk-doc
+	--enable-gtk-doc \
+	--enable-compile-warnings=no
 
 %make
 
