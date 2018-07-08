@@ -8,7 +8,7 @@
 Summary:	Main GNOME libraries
 Name:		%{pkgname}%{api_version}
 Version:	2.24.5
-Release:	18
+Release:	19
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.gnome.org/
@@ -114,7 +114,7 @@ export CC=gcc
 - removed mkrel
 - removed  BuildRoot
 
-* Mon Sep 19 2011 Götz Waschk <waschk@mandriva.org> 2.24.5-3
+* Mon Sep 19 2011 GÃ¶tz Waschk <waschk@mandriva.org> 2.24.5-3
 + Revision: 700350
 - rebuild
 
@@ -122,7 +122,7 @@ export CC=gcc
 + Revision: 666077
 - mass rebuild
 
-* Mon Jan 31 2011 Götz Waschk <waschk@mandriva.org> 2.24.5-1
+* Mon Jan 31 2011 GÃ¶tz Waschk <waschk@mandriva.org> 2.24.5-1
 + Revision: 634559
 - update to new version 2.24.5
 
@@ -130,11 +130,11 @@ export CC=gcc
 + Revision: 621679
 - rebuild for new popt
 
-* Mon Sep 27 2010 Götz Waschk <waschk@mandriva.org> 2.24.4-1mdv2011.0
+* Mon Sep 27 2010 GÃ¶tz Waschk <waschk@mandriva.org> 2.24.4-1mdv2011.0
 + Revision: 581460
 - update to new version 2.24.4
 
-* Tue Mar 30 2010 Götz Waschk <waschk@mandriva.org> 2.24.3-1mdv2010.1
+* Tue Mar 30 2010 GÃ¶tz Waschk <waschk@mandriva.org> 2.24.3-1mdv2010.1
 + Revision: 529731
 - update to new version 2.24.3
 
@@ -150,7 +150,7 @@ export CC=gcc
 + Revision: 476023
 - fix compilation with new libtool
 
-* Tue Sep 22 2009 Götz Waschk <waschk@mandriva.org> 2.24.2-1mdv2010.0
+* Tue Sep 22 2009 GÃ¶tz Waschk <waschk@mandriva.org> 2.24.2-1mdv2010.0
 + Revision: 447513
 - update to new version 2.24.2
 
@@ -158,15 +158,15 @@ export CC=gcc
 + Revision: 425558
 - rebuild
 
-* Fri Mar 06 2009 Götz Waschk <waschk@mandriva.org> 2.24.1-1mdv2009.1
+* Fri Mar 06 2009 GÃ¶tz Waschk <waschk@mandriva.org> 2.24.1-1mdv2009.1
 + Revision: 349840
 - update to new version 2.24.1
 
-* Mon Sep 22 2008 Götz Waschk <waschk@mandriva.org> 2.24.0-1mdv2009.0
+* Mon Sep 22 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.24.0-1mdv2009.0
 + Revision: 286814
 - new version
 
-* Tue Aug 19 2008 Götz Waschk <waschk@mandriva.org> 2.23.90-1mdv2009.0
+* Tue Aug 19 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.23.90-1mdv2009.0
 + Revision: 273732
 - new version
 - drop patch 1
@@ -176,7 +176,7 @@ export CC=gcc
 - add gtype.patch from upstream SVN: use gtype instead of gtktype (fixes
   brasero build)
 
-* Thu Jul 03 2008 Götz Waschk <waschk@mandriva.org> 2.23.4-1mdv2009.0
+* Thu Jul 03 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.23.4-1mdv2009.0
 + Revision: 230969
 - new version
 - drop patch 1
@@ -192,7 +192,7 @@ export CC=gcc
   + Pixel <pixel@mandriva.com>
     - do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
 
-  + Götz Waschk <waschk@mandriva.org>
+  + GÃ¶tz Waschk <waschk@mandriva.org>
     - new version
     - drop patch
 
@@ -200,29 +200,29 @@ export CC=gcc
 + Revision: 191442
 - Patch0 (SVN): fix thumbnail over gio (GNOME bug #517276)
 
-* Mon Mar 10 2008 Götz Waschk <waschk@mandriva.org> 2.22.01-1mdv2008.1
+* Mon Mar 10 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.22.01-1mdv2008.1
 + Revision: 183601
 - new version
 - new version
 
-* Sun Mar 09 2008 Götz Waschk <waschk@mandriva.org> 2.21.93-1mdv2008.1
+* Sun Mar 09 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.21.93-1mdv2008.1
 + Revision: 183022
 - new version
 
-* Mon Feb 25 2008 Götz Waschk <waschk@mandriva.org> 2.21.92-1mdv2008.1
+* Mon Feb 25 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.21.92-1mdv2008.1
 + Revision: 175047
 - new version
 
-* Tue Feb 12 2008 Götz Waschk <waschk@mandriva.org> 2.21.91-1mdv2008.1
+* Tue Feb 12 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.21.91-1mdv2008.1
 + Revision: 165847
 - new version
 - update deps
 
-* Mon Jan 28 2008 Götz Waschk <waschk@mandriva.org> 2.21.90-1mdv2008.1
+* Mon Jan 28 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.21.90-1mdv2008.1
 + Revision: 159216
 - new version
 
-* Tue Jan 15 2008 Götz Waschk <waschk@mandriva.org> 2.21.5-1mdv2008.1
+* Tue Jan 15 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.21.5-1mdv2008.1
 + Revision: 152137
 - new version
 - drop the patch
@@ -234,11 +234,11 @@ export CC=gcc
   + Thierry Vignaud <tv@mandriva.org>
     - kill re-definition of %%buildroot on Pixel's request
 
-* Thu Oct 18 2007 Götz Waschk <waschk@mandriva.org> 2.20.1.1-1mdv2008.1
+* Thu Oct 18 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.20.1.1-1mdv2008.1
 + Revision: 99887
 - new version
 
-* Mon Oct 15 2007 Götz Waschk <waschk@mandriva.org> 2.20.1-1mdv2008.1
+* Mon Oct 15 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.20.1-1mdv2008.1
 + Revision: 98396
 - new version
 - drop patch 1
@@ -247,7 +247,7 @@ export CC=gcc
 + Revision: 94957
 - Patch1 (SVN): improve volume/drive list consistency
 
-* Wed Sep 19 2007 Götz Waschk <waschk@mandriva.org> 2.20.0-1mdv2008.0
+* Wed Sep 19 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.20.0-1mdv2008.0
 + Revision: 90885
 - new version
 
@@ -255,25 +255,25 @@ export CC=gcc
 + Revision: 59905
 - Remove patches 3, 4, 5, no longer needed with switch to XDG user dirs
 
-* Tue Jul 31 2007 Götz Waschk <waschk@mandriva.org> 2.19.1-2mdv2008.0
+* Tue Jul 31 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.19.1-2mdv2008.0
 + Revision: 57247
 - new devel name
 
-* Mon Jul 30 2007 Götz Waschk <waschk@mandriva.org> 2.19.1-1mdv2008.0
+* Mon Jul 30 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.19.1-1mdv2008.0
 + Revision: 56583
 - new version
 - update file list
 
-* Tue Jun 19 2007 Götz Waschk <waschk@mandriva.org> 2.19.0-1mdv2008.0
+* Tue Jun 19 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.19.0-1mdv2008.0
 + Revision: 41288
 - new version
 
 
-* Wed Mar 14 2007 Götz Waschk <waschk@mandriva.org> 2.18.1-1mdv2007.1
+* Wed Mar 14 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.18.1-1mdv2007.1
 + Revision: 143330
 - new version
 
-* Mon Mar 12 2007 Götz Waschk <waschk@mandriva.org> 2.18.0-1mdv2007.1
+* Mon Mar 12 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.18.0-1mdv2007.1
 + Revision: 141790
 - new version
 - readd changelog
@@ -281,35 +281,35 @@ export CC=gcc
   + Thierry Vignaud <tvignaud@mandriva.com>
     - no need to package big ChangeLog when NEWS is already there
 
-* Tue Feb 27 2007 Götz Waschk <waschk@mandriva.org> 2.17.92-1mdv2007.1
+* Tue Feb 27 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.17.92-1mdv2007.1
 + Revision: 126222
 - new version
 
-* Wed Feb 14 2007 Götz Waschk <waschk@mandriva.org> 2.17.91-2mdv2007.1
+* Wed Feb 14 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.17.91-2mdv2007.1
 + Revision: 120753
 - bump
 
-* Mon Feb 12 2007 Götz Waschk <waschk@mandriva.org> 2.17.91-1mdv2007.1
+* Mon Feb 12 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.17.91-1mdv2007.1
 + Revision: 119020
 - new version
 
-* Mon Jan 22 2007 Götz Waschk <waschk@mandriva.org> 2.17.90-1mdv2007.1
+* Mon Jan 22 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.17.90-1mdv2007.1
 + Revision: 111949
 - new version
 
-* Tue Jan 09 2007 Götz Waschk <waschk@mandriva.org> 2.17.1-1mdv2007.1
+* Tue Jan 09 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.17.1-1mdv2007.1
 + Revision: 106279
 - new version
 
-* Tue Dec 05 2006 Götz Waschk <waschk@mandriva.org> 2.17.0-1mdv2007.1
+* Tue Dec 05 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.17.0-1mdv2007.1
 + Revision: 90675
 - new version
 
-* Thu Nov 30 2006 Götz Waschk <waschk@mandriva.org> 2.16.1-6mdv2007.1
+* Thu Nov 30 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.16.1-6mdv2007.1
 + Revision: 89088
 - rebuild
 
-* Wed Nov 29 2006 Götz Waschk <waschk@mandriva.org> 2.16.1-5mdv2007.1
+* Wed Nov 29 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.16.1-5mdv2007.1
 + Revision: 88343
 - rebuild
 
@@ -317,14 +317,14 @@ export CC=gcc
 + Revision: 65486
 - add BuildRequires: libsm-devel - for gnome-session
 
-* Fri Oct 13 2006 Götz Waschk <waschk@mandriva.org> 2.16.1-3mdv2006.0
+* Fri Oct 13 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.16.1-3mdv2006.0
 + Revision: 63758
 - rebuild
 - fix patch 5
 - unzip patches
 - Import libgnomeui2
 
-* Fri Oct 06 2006 G�tz Waschk <waschk@mandriva.org> 2.16.1-1mdv2007.0
+* Fri Oct 06 2006 Götz Waschk <waschk@mandriva.org> 2.16.1-1mdv2007.0
 - drop patch 6
 - rediff patch 5
 - New version 2.16.1
@@ -335,10 +335,10 @@ export CC=gcc
 * Fri Sep 08 2006 Frederic Crozat <fcrozat@mandriva.com> 2.16.0-2mdv2007.0
 - Update patches 3, 4, 5 and apply them
 
-* Tue Sep 05 2006 Götz Waschk <waschk@mandriva.org> 2.16.0-1mdv2007.0
+* Tue Sep 05 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.16.0-1mdv2007.0
 - New release 2.16.0
 
-* Tue Aug 08 2006 Götz Waschk <waschk@mandriva.org> 2.15.91-1mdv2007.0
+* Tue Aug 08 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.15.91-1mdv2007.0
 - New release 2.15.91
 
 * Thu Aug 03 2006 Thierry Vignaud <tvignaud@mandriva.com> 2.15.90-3mdv2007.0
@@ -347,7 +347,7 @@ export CC=gcc
 * Wed Aug 02 2006 Frederic Crozat <fcrozat@mandriva.com> 2.15.90-2mdv2007.0
 - Rebuild with latest dbus
 
-* Wed Jul 26 2006 Götz Waschk <waschk@mandriva.org> 2.15.90-1
+* Wed Jul 26 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.15.90-1
 - New release 2.15.90
 
 * Thu Jul 13 2006 Frederic Crozat <fcrozat@mandriva.com> 2.15.2-1mdv2007.0
@@ -361,14 +361,14 @@ export CC=gcc
 - Release 2.14.1
 - Regenerate patch0
 
-* Wed Mar 01 2006 Götz Waschk <waschk@mandriva.org> 2.12.1-2mdk
+* Wed Mar 01 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.12.1-2mdk
 - Rebuild to remove howl dep
 
-* Tue Feb 07 2006 Götz Waschk <waschk@mandriva.org> 2.12.1-1mdk
+* Tue Feb 07 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.12.1-1mdk
 - New release 2.12.1
 - use mkrel
 
-* Thu Nov 17 2005 Götz Waschk <waschk@mandriva.org> 2.12.0-2mdk
+* Thu Nov 17 2005 GÃ¶tz Waschk <waschk@mandriva.org> 2.12.0-2mdk
 - rebuild for new openssl
 
 * Thu Oct 06 2005 Frederic Crozat <fcrozat@mandriva.com> 2.12.0-1mdk
@@ -385,7 +385,7 @@ export CC=gcc
 * Thu Sep 08 2005 Frederic Crozat <fcrozat@mandriva.com> 2.10.1-8mdk 
 - Patch4: fix desktop icon loading
 
-* Sat Sep 03 2005 Götz Waschk <waschk@mandriva.org> 2.10.1-7mdk
+* Sat Sep 03 2005 GÃ¶tz Waschk <waschk@mandriva.org> 2.10.1-7mdk
 - rebuild to remove glitz dep
 
 * Sat Aug 27 2005 Frederic Crozat <fcrozat@mandriva.com> 2.10.1-6mdk 
@@ -404,7 +404,7 @@ export CC=gcc
 * Sat Jul 09 2005 Thierry Vignaud <tvignaud@mandrakesoft.com> 2.10.1-2mdk
 - fix provides on x86_64
 
-* Thu Jul 07 2005 G�tz Waschk <waschk@mandriva.org> 2.10.1-1mdk
+* Thu Jul 07 2005 Götz Waschk <waschk@mandriva.org> 2.10.1-1mdk
 - drop patch
 - New release 2.10.1
 
@@ -427,7 +427,7 @@ export CC=gcc
 * Fri Dec 03 2004 Frederic Crozat <fcrozat@mandrakesoft.com> 2.8.0-2mdk 
 - Patch1 (CVS): improve filechooser vfs backend speed on big directories
 
-* Tue Nov 09 2004 G�tz Waschk <waschk@linux-mandrake.com> 2.8.0-1mdk
+* Tue Nov 09 2004 Götz Waschk <waschk@linux-mandrake.com> 2.8.0-1mdk
 - New release 2.8.0
 - Remove patch0 (merged upstream)
 - Patch0 (Fedora): improve gnomevfs file chooser backend for ftp:
@@ -436,14 +436,14 @@ export CC=gcc
 - Patch0 (CVS): various bug and memleak fixes from CVS
 - Enable libtoolize
 
-* Mon May 03 2004 G�tz Waschk <waschk@linux-mandrake.com> 2.6.1.1-1mdk
+* Mon May 03 2004 Götz Waschk <waschk@linux-mandrake.com> 2.6.1.1-1mdk
 - drop the patch
 - New release 2.6.1.1
 
-* Wed Apr 21 2004 G�tz Waschk <waschk@linux-mandrake.com> 2.6.1-1mdk
+* Wed Apr 21 2004 Götz Waschk <waschk@linux-mandrake.com> 2.6.1-1mdk
 - patch to make it build with gtk+ 2.4.0
 - New release 2.6.1
 
 * Tue Apr 06 2004 Frederic Crozat <fcrozat@mandrakesoft.com> 2.6.0-1mdk
-- Release 2.6.0 (with G�tz help)
+- Release 2.6.0 (with Götz help)
 
