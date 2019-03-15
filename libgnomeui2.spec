@@ -65,15 +65,13 @@ to develop applications using the GNOME library.
 autoreconf -fi
 
 %build
-export CC=gcc
 %configure \
-	--enable-gtk-doc \
 	--enable-compile-warnings=no
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %find_lang %{pkgname}-2.0
 
