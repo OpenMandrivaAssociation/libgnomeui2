@@ -59,7 +59,7 @@ to develop applications using the GNOME library.
 
 %prep
 %setup -qn %{pkgname}-%{version}
-%apply_patches
+%autopatch -p1
 
 #needed by patch0
 autoreconf -fi
@@ -101,7 +101,7 @@ autoreconf -fi
 - disabled static build
 - removed old ldconfig scriptlets
 - converted RPM_BUILD_ROOT to buildroot
-- switched to apply_patches macros
+- switched to autopatch -p1 macros
 - changed macro from libnamedev to develname
 - fixed devel pkg description & summary
 - removed reqs for devel pkgs in devel pkg
