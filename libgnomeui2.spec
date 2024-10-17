@@ -11,7 +11,7 @@ Version:	2.24.5
 Release:	19
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://www.gnome.org/
+Url:		https://www.gnome.org/
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 # (fc) 2.22.1-2mdv link with math library
 Patch0:		libgnomeui-2.22.1-floor.patch
