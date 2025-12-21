@@ -16,6 +16,11 @@ Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.
 # (fc) 2.22.1-2mdv link with math library
 Patch0:		libgnomeui-2.22.1-floor.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	gnome-common
 BuildRequires:	gtk-doc >= 0.9
