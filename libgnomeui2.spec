@@ -8,7 +8,7 @@
 Summary:	Main GNOME libraries
 Name:		%{pkgname}%{api_version}
 Version:	2.24.5
-Release:	19
+Release:	20
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		https://www.gnome.org/
